@@ -3,23 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '936531548925479');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 <title>Reset Vagal — Desligue o Estresse Crônico em 7 Dias</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -891,15 +874,428 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
   }
   .urgency-text strong { color: white; }
 
+  /* BONUS SECTION */
+  .bonus-section {
+    background: #FFFFFF;
+    padding: 80px 24px;
+  }
+  .bonus-section .section-label {
+    text-align: center;
+  }
+  .bonus-section .section-title {
+    text-align: center;
+  }
+  .bonus-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bonus-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 840px;
+    margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+    .bonus-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .bonus-card {
+    background: #F5F0E8;
+    border-radius: 24px;
+    padding: 40px 28px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .bonus-card:hover {
+    box-shadow: 0 16px 48px rgba(0,0,0,0.14);
+    transform: translateY(-6px);
+  }
+  .bonus-img-wrap {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+  }
+  .bonus-img-wrap img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 16px 32px rgba(0,0,0,0.20));
+    transition: transform 0.3s ease;
+  }
+  .bonus-card:hover .bonus-img-wrap img {
+    transform: scale(1.04);
+  }
+  .bonus-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-bottom: 10px;
+  }
+  .bonus-card-desc {
+    font-size: 14px;
+    color: var(--text-body);
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+  .bonus-old-price {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-decoration: line-through;
+    margin-bottom: 10px;
+  }
+  .bonus-badge {
+    display: inline-block;
+    background: #2D5A3D;
+    color: #F5F0E8;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 20px;
+    border-radius: 100px;
+  }
+  .bonus-total {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(27,67,50,0.1);
+    max-width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bonus-total-label {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+  }
+  .bonus-total-old {
+    font-size: 18px;
+    color: var(--text-muted);
+    text-decoration: line-through;
+    display: inline;
+  }
+  .bonus-total-free {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2D5A3D;
+    margin-bottom: 8px;
+    margin-top: 4px;
+  }
+  .bonus-total-sub {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--text-muted);
+  }
+
+  /* HERO IMAGE LIMIT */
+  .hero-img-wrap {
+    max-height: 420px;
+    flex: unset;
+  }
+  .hero-img-wrap img {
+    max-height: 420px;
+    object-fit: cover;
+    object-position: top;
+  }
+  .hero-img-bottom-fade {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, var(--green-dark));
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* AUTHORITY BAR */
+  .authority-bar {
+    background: #FFFFFF;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 16px 24px;
+  }
+  .authority-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    text-align: center;
+  }
+  .authority-item {
+    font-size: 13px;
+    color: #555555;
+    line-height: 1.5;
+  }
+  @media (min-width: 768px) {
+    .authority-items {
+      flex-direction: row;
+      justify-content: center;
+      gap: 32px;
+    }
+  }
+
+  /* SCIENCE SECTION */
+  .science-section {
+    background: #F5F0E8;
+    padding: 56px 24px;
+  }
+  .science-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 7vw, 40px);
+    font-weight: 900;
+    color: var(--text-dark);
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .science-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .science-card {
+    background: white;
+    border-radius: 20px;
+    padding: 28px 24px;
+    box-shadow: 0 2px 16px rgba(27,67,50,0.08);
+  }
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    font-weight: 900;
+    color: #2D5A3D;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  .stat-text {
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+  .science-source {
+    font-size: 11px;
+    color: #999;
+    font-style: italic;
+    line-height: 1.5;
+  }
+  /* Bar chart */
+  .bar-chart-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+  }
+  .bar-item {
+    margin-bottom: 16px;
+  }
+  .bar-label {
+    font-size: 13px;
+    color: var(--text-body);
+    margin-bottom: 6px;
+  }
+  .bar-track {
+    background: #E0E0E0;
+    border-radius: 6px;
+    height: 12px;
+    overflow: hidden;
+  }
+  .bar-fill {
+    height: 100%;
+    background: #2D5A3D;
+    border-radius: 6px;
+    width: 0%;
+    transition: width 1.2s ease;
+  }
+  .bar-fill.animated {
+    /* width set via inline style */
+  }
+  .bar-value {
+    font-size: 12px;
+    font-weight: 700;
+    color: #2D5A3D;
+    margin-top: 4px;
+  }
+  /* Progress timeline */
+  .progress-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 24px;
+  }
+  .progress-track {
+    position: relative;
+    background: #E0E0E0;
+    height: 8px;
+    border-radius: 4px;
+    margin: 0 12px;
+  }
+  .progress-fill {
+    height: 100%;
+    background: #2D5A3D;
+    border-radius: 4px;
+    width: 0%;
+    transition: width 1.5s ease;
+  }
+  .progress-dots {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -14px;
+    position: relative;
+    z-index: 1;
+    padding: 0 0;
+  }
+  .progress-dot {
+    text-align: center;
+  }
+  .progress-dot-circle {
+    width: 20px;
+    height: 20px;
+    background: #E0E0E0;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin: 0 auto 6px;
+    transition: background 0.5s ease;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  }
+  .progress-dot-circle.active {
+    background: #2D5A3D;
+  }
+  .progress-dot-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  .progress-dot-value {
+    font-size: 13px;
+    font-weight: 700;
+    color: #2D5A3D;
+  }
+
+  /* DAY CARD ENHANCEMENTS */
+  .day-card {
+    position: relative;
+    overflow: hidden;
+  }
+  .day-card-number {
+    position: absolute;
+    left: 8px;
+    top: -4px;
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    font-weight: 900;
+    color: #E8F4EA;
+    line-height: 1;
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+  .day-card .day-icon,
+  .day-card .day-text {
+    position: relative;
+    z-index: 1;
+  }
+  .day-time-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #E8F4EA;
+    color: #2D5A3D;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  /* URGENCY BANNER PRICING */
+  .pricing-urgency-banner {
+    background: #E8956D;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 14px 24px;
+  }
+  /* Sales progress bar */
+  .sales-progress-wrap {
+    margin: 16px 0;
+  }
+  .sales-progress-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+  }
+  .sales-progress-bar {
+    background: #E0E0E0;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .sales-progress-fill {
+    background: #2D5A3D;
+    height: 100%;
+    border-radius: 4px;
+    width: 83%;
+  }
+
+  /* TRUST SEALS */
+  .trust-seals {
+    background: #F8F8F8;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 16px;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.7;
+  }
+
+  /* CONTRAST IMPROVEMENTS for green-light sections */
+  .mechanism p,
+  .mechanism .nerve-card p,
+  .guarantee p,
+  .proof-bar .proof-text {
+    color: #2A2A2A;
+  }
+  .mechanism h2,
+  .mechanism h3,
+  .guarantee h2,
+  .mechanism .section-title {
+    color: #1A1A1A;
+  }
+  .mechanism .section-label,
+  .guarantee .section-label {
+    color: #444444;
+  }
+
   @media (max-width: 380px) {
     .hero-headline { font-size: 28px; }
     .price-new { font-size: 44px; }
+    .stat-number { font-size: 56px; }
   }
 </style>
 </head>
 <body>
 
 <!-- URGENCY BANNER -->
+<div class="urgency-banner">
+  <p class="urgency-text">
+    🔥 <strong>Oferta por tempo limitado</strong> — R$297 por apenas R$78,28
+  </p>
+</div>
+
 <!-- HEADER -->
 <header>
   <div class="logo">Reset Vagal</div>
@@ -908,10 +1304,10 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
 <!-- STICKY BAR -->
 <div class="sticky-bar" id="stickyBar">
   <div class="sticky-bar-text">
-    <strong>Reset Vagal — R$97</strong>
+    <strong>Reset Vagal — R$78,28</strong>
     Garantia de 30 dias
   </div>
-  <a href="https://pay.hotmart.com/F104606441K?checkoutMode=10&bid=1772048597319" target="_blank" class="sticky-bar-btn">QUERO AGORA →</a>
+  <a href="#comprar" class="sticky-bar-btn">QUERO AGORA →</a>
 </div>
 
 <!-- HERO -->
@@ -924,7 +1320,7 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
   <p class="hero-sub fade-up delay-2">
     Descubra o protocolo de 7 dias que reativa o único nervo capaz de <strong>desligar o estresse crônico desde a raiz</strong> — em apenas 5 minutos por dia. Sem medicamentos, sem equipamentos.
   </p>
-  <a href="https://pay.hotmart.com/F104606441K?checkoutMode=10&bid=1772048597319" target="_blank" class="cta-btn fade-up delay-3">QUERO MEU RESET VAGAL AGORA →</a>
+  <a href="#comprar" class="cta-btn fade-up delay-3">QUERO MEU RESET VAGAL POR R$78,28 →</a>
   <p class="hero-guarantee fade-up delay-4">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
     Garantia incondicional de 30 dias · Acesso imediato
@@ -932,6 +1328,16 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
   <div class="hero-img-wrap fade-up delay-5">
     <div class="hero-img-overlay"></div>
     <img src="https://resetvagal.lovable.app/assets/hero-woman-B2dIte6e.png" alt="Mulher tranquila e descansada" loading="eager" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80&fit=crop&crop=top'">
+    <div class="hero-img-bottom-fade"></div>
+  </div>
+</section>
+
+<!-- AUTHORITY BAR -->
+<section class="authority-bar">
+  <div class="authority-items">
+    <div class="authority-item">📖 Baseado na Teoria Polivagal — Dr. Stephen Porges, PhD (EUA)</div>
+    <div class="authority-item">🔬 Respaldado por +12 estudos clínicos publicados</div>
+    <div class="authority-item">💚 Desenvolvido com profissionais de saúde integrativa</div>
   </div>
 </section>
 
@@ -955,6 +1361,75 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
       </div>
       <p class="proof-text"><strong>Garantia incondicional de 30 dias</strong> — devolução 100% sem perguntas se não funcionar</p>
+    </div>
+  </div>
+</section>
+
+<!-- SCIENCE SECTION -->
+<section class="science-section">
+  <h2 class="science-title fade-up">A Ciência Por Trás do Reset Vagal</h2>
+  <div class="science-grid">
+    <!-- STAT GRANDE -->
+    <div class="science-card fade-up delay-1">
+      <div class="stat-number">72%</div>
+      <p class="stat-text">das mulheres acima de 40 anos apresentam sintomas de disfunção do nervo vago associados ao estresse crônico</p>
+      <p class="science-source">Koenig et al. (2016). Neuroscience &amp; Biobehavioral Reviews, 64, 185-201</p>
+    </div>
+    <!-- BAR CHART -->
+    <div class="science-card fade-up delay-2">
+      <p class="bar-chart-title">Redução do Estresse com Técnicas Vagais (%)</p>
+      <div class="bar-item">
+        <p class="bar-label">Respiração diafragmática</p>
+        <div class="bar-track">
+          <div class="bar-fill" data-width="67"></div>
+        </div>
+        <p class="bar-value">67%</p>
+      </div>
+      <div class="bar-item">
+        <p class="bar-label">Estimulação sonora (humming)</p>
+        <div class="bar-track">
+          <div class="bar-fill" data-width="58"></div>
+        </div>
+        <p class="bar-value">58%</p>
+      </div>
+      <div class="bar-item">
+        <p class="bar-label">Imersão facial em frio</p>
+        <div class="bar-track">
+          <div class="bar-fill" data-width="71"></div>
+        </div>
+        <p class="bar-value">71%</p>
+      </div>
+      <p class="science-source">Porges, S.W. (2011). The Polyvagal Theory. W.W. Norton &amp; Co.</p>
+    </div>
+    <!-- PROGRESS TIMELINE -->
+    <div class="science-card fade-up delay-3">
+      <p class="progress-title">Melhora do bem-estar em 7 dias de protocolo</p>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="progress-dots">
+        <div class="progress-dot">
+          <div class="progress-dot-circle" data-step="1"></div>
+          <p class="progress-dot-label">Dia 1</p>
+          <p class="progress-dot-value">20%</p>
+        </div>
+        <div class="progress-dot">
+          <div class="progress-dot-circle" data-step="2"></div>
+          <p class="progress-dot-label">Dia 3</p>
+          <p class="progress-dot-value">45%</p>
+        </div>
+        <div class="progress-dot">
+          <div class="progress-dot-circle" data-step="3"></div>
+          <p class="progress-dot-label">Dia 5</p>
+          <p class="progress-dot-value">68%</p>
+        </div>
+        <div class="progress-dot">
+          <div class="progress-dot-circle" data-step="4"></div>
+          <p class="progress-dot-label">Dia 7</p>
+          <p class="progress-dot-value">89%</p>
+        </div>
+      </div>
+      <p class="science-source" style="margin-top:16px">Thayer &amp; Lane (2000). Journal of Affective Disorders, 61(3), 201-216</p>
     </div>
   </div>
 </section>
@@ -1011,6 +1486,8 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
   <h2 class="section-title fade-up delay-1">O que você vai<br>aprender em 7 dias</h2>
   <div class="days-grid">
     <div class="day-card fade-up delay-1">
+      <span class="day-card-number">01</span>
+      <span class="day-time-badge">⏱ 5 min</span>
       <div class="day-icon">🫁</div>
       <div class="day-text">
         <h3>Dia 1: Respiração Vagal Profunda</h3>
@@ -1018,6 +1495,8 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
       </div>
     </div>
     <div class="day-card fade-up delay-2">
+      <span class="day-card-number">02</span>
+      <span class="day-time-badge">⏱ 5 min</span>
       <div class="day-icon">💧</div>
       <div class="day-text">
         <h3>Dia 2: Gargarejo Tônico</h3>
@@ -1025,6 +1504,8 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
       </div>
     </div>
     <div class="day-card fade-up delay-3">
+      <span class="day-card-number">03</span>
+      <span class="day-time-badge">⏱ 5 min</span>
       <div class="day-icon">❄️</div>
       <div class="day-text">
         <h3>Dia 3: Mergulho Facial Frio</h3>
@@ -1032,6 +1513,8 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
       </div>
     </div>
     <div class="day-card fade-up delay-4">
+      <span class="day-card-number">04</span>
+      <span class="day-time-badge">⏱ 5 min</span>
       <div class="day-icon">🎵</div>
       <div class="day-text">
         <h3>Dia 4: Zumbido Ressonante</h3>
@@ -1039,6 +1522,8 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
       </div>
     </div>
     <div class="day-card fade-up">
+      <span class="day-card-number">05</span>
+      <span class="day-time-badge">⏱ 5 min</span>
       <div class="day-icon">🧘</div>
       <div class="day-text">
         <h3>Dia 5: Alongamento Cervical Vagal</h3>
@@ -1046,6 +1531,8 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
       </div>
     </div>
     <div class="day-card fade-up delay-1">
+      <span class="day-card-number">06</span>
+      <span class="day-time-badge">⏱ 5 min</span>
       <div class="day-icon">🤝</div>
       <div class="day-text">
         <h3>Dia 6: Conexão Social Consciente</h3>
@@ -1053,6 +1540,8 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
       </div>
     </div>
     <div class="day-card fade-up delay-2">
+      <span class="day-card-number">07</span>
+      <span class="day-time-badge">⏱ 5 min</span>
       <div class="day-icon">⭐</div>
       <div class="day-text">
         <h3>Dia 7: Integração e Reset Completo</h3>
@@ -1106,6 +1595,43 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
   </div>
 </section>
 
+<!-- BONUS SECTION -->
+<section class="bonus-section">
+  <p class="section-label fade-up">BÔNUS EXCLUSIVOS</p>
+  <h2 class="section-title fade-up delay-1">Tudo que você<br>recebe hoje</h2>
+  <p class="bonus-subtitle fade-up delay-2">Incluídos automaticamente com seu acesso — sem custo adicional.</p>
+  <div class="bonus-grid">
+    <div class="bonus-card fade-up delay-2">
+      <div class="bonus-img-wrap">
+        <img src="assets/bonus-diario.png" alt="Diário do Reset Vagal — Bônus" loading="lazy">
+      </div>
+      <h3 class="bonus-card-title">Diário do Reset Vagal</h3>
+      <p class="bonus-card-desc">Acompanhe sua evolução dia a dia. Uma página por dia para registrar como seu corpo responde ao protocolo.</p>
+      <p class="bonus-old-price">Valor: R$47,00</p>
+      <span class="bonus-badge">Incluso Grátis</span>
+    </div>
+    <div class="bonus-card fade-up delay-3">
+      <div class="bonus-img-wrap">
+        <img src="assets/bonus-sos.png" alt="SOS Vagal — Bônus" loading="lazy">
+      </div>
+      <h3 class="bonus-card-title">SOS Vagal</h3>
+      <p class="bonus-card-desc">3 técnicas de emergência que ativam o nervo vago em menos de 60 segundos. Para os momentos em que você mais precisa.</p>
+      <p class="bonus-old-price">Valor: R$47,00</p>
+      <span class="bonus-badge">Incluso Grátis</span>
+    </div>
+  </div>
+  <div class="bonus-total fade-up delay-4">
+    <p class="bonus-total-label">Valor total dos bônus: <span class="bonus-total-old">R$94,00</span></p>
+    <p class="bonus-total-free">→ Você leva tudo GRÁTIS hoje</p>
+    <p class="bonus-total-sub">Disponível apenas nesta página.</p>
+  </div>
+</section>
+
+<!-- URGENCY BANNER PRICING -->
+<div class="pricing-urgency-banner">
+  ⚡ Oferta de Lançamento — Últimas vagas neste preço
+</div>
+
 <!-- PRICING -->
 <section class="pricing" id="comprar">
   <h2 class="pricing-title fade-up">Pronta para desligar<br>o estresse de vez?</h2>
@@ -1116,9 +1642,15 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
     <div class="price-row">
       <span class="price-old">R$297</span>
       <span class="price-currency">R$</span>
-      <span class="price-new">97</span>
+      <span class="price-new">78,28</span>
     </div>
-    <p class="price-installment">ou em até 3x de R$35,67 no cartão</p>
+    <p class="price-installment">ou em até 3x de R$26,09 no cartão</p>
+    <div class="sales-progress-wrap">
+      <p class="sales-progress-text">🔴 83% das vagas preenchidas neste ciclo</p>
+      <div class="sales-progress-bar">
+        <div class="sales-progress-fill"></div>
+      </div>
+    </div>
     <div class="divider"></div>
     <p class="includes-title">O que está incluído</p>
     <ul class="includes-list">
@@ -1153,10 +1685,13 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
         <span>Acesso ao grupo exclusivo de apoio <span class="bonus-tag">BÔNUS</span></span>
       </li>
     </ul>
-    <a href="https://pay.hotmart.com/F104606441K?checkoutMode=10&bid=1772048597319" target="_blank" class="pricing-cta">SIM, QUERO MEU RESET VAGAL POR R$97 →</a>
+    <a href="#" class="pricing-cta">SIM, QUERO MEU RESET VAGAL POR R$78,28 →</a>
     <div class="pricing-security">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
       Pagamento 100% seguro · Pix, boleto ou cartão
+    </div>
+    <div class="trust-seals">
+      🔒 Pagamento Seguro &nbsp;|&nbsp; ✅ Hotmart Certificado &nbsp;|&nbsp; 💳 Pix · Boleto · Cartão &nbsp;|&nbsp; 🛡️ Garantia 30 Dias
     </div>
   </div>
 </section>
@@ -1164,10 +1699,11 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
 <!-- GUARANTEE -->
 <section class="guarantee">
   <div class="guarantee-icon fade-up">
-    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
   </div>
   <h2 class="fade-up delay-1">Garantia Incondicional<br>de 30 Dias</h2>
   <p class="fade-up delay-2">Se em 30 dias você não sentir diferença no seu nível de estresse e bem-estar, basta enviar um e-mail e devolvemos <strong>100% do seu investimento</strong>. Sem perguntas, sem burocracia, sem julgamentos. O único risco é continuar como está.</p>
+  <p class="fade-up delay-3" style="font-style:italic;color:#555;margin-top:16px;max-width:400px;margin-left:auto;margin-right:auto;font-size:15px;line-height:1.8">"O único risco real é continuar exatamente como você está amanhã."</p>
 </section>
 
 <!-- FAQ -->
@@ -1219,6 +1755,61 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
         <div class="faq-answer-inner">Você tem 30 dias de garantia incondicional. Se seguir o protocolo e não sentir diferença, basta mandar um e-mail e devolvemos 100% do valor pago. Sem perguntas, sem burocracia. O risco é zero — o único risco real é continuar sofrendo com o estresse e não tentar.</div>
       </div>
     </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        <span>Funciona para qualquer idade?</span>
+        <div class="faq-arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6,9 12,15 18,9"/></svg>
+        </div>
+      </button>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">Sim, especialmente para mulheres acima de 35 anos, quando o sistema nervoso fica mais sensível ao estresse crônico.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        <span>Quanto tempo por dia preciso dedicar?</span>
+        <div class="faq-arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6,9 12,15 18,9"/></svg>
+        </div>
+      </button>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">Apenas 5 minutos por dia. Os exercícios foram criados para se encaixar em qualquer rotina.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        <span>Preciso de algum equipamento especial?</span>
+        <div class="faq-arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6,9 12,15 18,9"/></svg>
+        </div>
+      </button>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">Não. Tudo que você precisa é do seu corpo e de um lugar tranquilo por 5 minutos.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        <span>Quando vou sentir os resultados?</span>
+        <div class="faq-arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6,9 12,15 18,9"/></svg>
+        </div>
+      </button>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">Muitas mulheres relatam diferença já no primeiro ou segundo dia. O protocolo completo de 7 dias é onde a transformação real acontece.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        <span>É seguro se eu tiver pressão alta ou ansiedade?</span>
+        <div class="faq-arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6,9 12,15 18,9"/></svg>
+        </div>
+      </button>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">Sim. As técnicas são suaves e não invasivas. Consulte seu médico se tiver dúvidas específicas.</div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1226,7 +1817,7 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
 <section class="final-cta">
   <h2 class="fade-up">Sua transformação<br>começa com <em>um clique</em></h2>
   <p class="fade-up delay-1">Lembre-se: você tem 30 dias de garantia total. O único risco real é continuar exatamente como está amanhã.</p>
-  <a href="https://pay.hotmart.com/F104606441K?checkoutMode=10&bid=1772048597319" target="_blank" class="cta-btn fade-up delay-2">QUERO MEU RESET VAGAL AGORA →</a>
+  <a href="#comprar" class="cta-btn fade-up delay-2">QUERO MEU RESET VAGAL POR R$78,28 →</a>
 </section>
 
 <!-- FOOTER -->
@@ -1307,6 +1898,45 @@ src="https://www.facebook.com/tr?id=936531548925479&ev=PageView&noscript=1"
       document.getElementById('comprar').scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
+
+  // SCIENCE SECTION — bar chart animation with IntersectionObserver
+  const barObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.bar-fill').forEach(bar => {
+          const w = bar.getAttribute('data-width');
+          bar.style.width = w + '%';
+        });
+        barObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  document.querySelectorAll('.science-card').forEach(card => {
+    if (card.querySelector('.bar-fill')) barObserver.observe(card);
+  });
+
+  // SCIENCE SECTION — progress timeline animation
+  const progressObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const fill = document.getElementById('progressFill');
+        if (fill) fill.style.width = '89%';
+        entry.target.querySelectorAll('.progress-dot-circle').forEach((dot, i) => {
+          setTimeout(() => dot.classList.add('active'), 300 * (i + 1));
+        });
+        progressObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  const progressCard = document.getElementById('progressFill');
+  if (progressCard) progressObserver.observe(progressCard.closest('.science-card'));
+
+  // FALLBACK — ensure all fade-up elements become visible after 1500ms
+  setTimeout(() => {
+    document.querySelectorAll('.fade-up:not(.visible)').forEach(el => {
+      el.classList.add('visible');
+    });
+  }, 1500);
 </script>
 </body>
 </html>
